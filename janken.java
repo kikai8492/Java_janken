@@ -9,18 +9,18 @@ class Janken {
             System.out.println("0:グー、1:チョキ、2:パー");
             int hand = scanner.nextInt();
 
-            // if (hand == 0) {
-            //     System.out.println("あなたの選んだ手はグーです");
-            //     return hand;
-            // } else if (hand == 1) {
-            //     System.out.println("あなたの選んだ手はチョキです");
-            //     return hand;
-            // } else if (hand == 2) {
-            //     System.out.println("あなたの選んだ手はパーです");
-            //     return hand;
-            // } else {
-            //     System.out.println("0〜2の数字を入力してください");
-            // }
+            if (hand == 0) {
+                System.out.println("あなたの選んだ手はグーです");
+                return hand;
+            } else if (hand == 1) {
+                System.out.println("あなたの選んだ手はチョキです");
+                return hand;
+            } else if (hand == 2) {
+                System.out.println("あなたの選んだ手はパーです");
+                return hand;
+            } else {
+                System.out.println("0〜2の数字を入力してください");
+            }
         }
     }
 
