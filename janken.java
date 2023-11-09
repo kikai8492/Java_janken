@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 class Janken {
@@ -26,7 +27,8 @@ class Janken {
 
     public void judge() {
         int playerHand = inputNumber();
-        int enemyHand = (int)(Math.random() * 3);
+        Random random = new Random();
+        int enemyHand = random.nextInt(3);
         if (enemyHand == 0) {
           System.out.println("相手の選んだ手はグーです");
         }else if (enemyHand == 1) {
